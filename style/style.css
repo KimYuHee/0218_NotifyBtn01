@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+span#inboxBtn {
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 2px;
+    background-color: #555555;
+    display: inline-block;
+    position: relative;
+}
+
+span#inboxBtn:hover {
+    background-color: #fe0000;
+}
+
+span#inboxBtn::after {
+    content: "3";
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid  #fe0000;
+    border-radius: 12px;
+    /*width or height 값의 반 이상 (패딩x경우)*/
+    background-color:  #fe0000;
+    display: inline-block;
+    position: absolute;
+    right: -12px;
+    top: -10px;
+}
